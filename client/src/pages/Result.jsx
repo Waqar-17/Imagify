@@ -72,13 +72,13 @@ const Result = () => {
         onChange={e => setInput(e.target.value)} value={input}
         type="text"
         placeholder="Describe what you want to generate..."
-        className="flex-1 bg-transparent outline-none px-6 py-4 placeholder-gray-400"
+        className="flex-1 bg-transparent min-w-0 outline-none px-4 sm:px-6 py-3 sm:py-4 placeholder-gray-400"
         disabled={loading}
       />
       <button
         type="submit"
         disabled={loading}
-        className="bg-gray-900 px-10 py-4 text-white hover:bg-gray-800 transition disabled:bg-gray-400"
+        className="bg-gray-900 px-5 sm:px-10 py-3 sm:py-4 text-white hover:bg-gray-800 transition disabled:bg-gray-400 whitespace-nowrap min-w-fit"
       >
         Generate
       </button>
